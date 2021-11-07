@@ -4,7 +4,7 @@ import (
 	"container/list"
 	"strings"
 
-	yaml "gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 type commentOpPreferences struct {

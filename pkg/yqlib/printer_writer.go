@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 type PrinterWriter interface {

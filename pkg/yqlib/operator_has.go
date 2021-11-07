@@ -4,7 +4,7 @@ import (
 	"container/list"
 	"strconv"
 
-	yaml "gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 func hasOperator(d *dataTreeNavigator, context Context, expressionNode *ExpressionNode) (Context, error) {

@@ -11,7 +11,7 @@ import (
 	"testing"
 
 	"github.com/mikefarah/yq/v4/test"
-	yaml "gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 type expressionScenario struct {

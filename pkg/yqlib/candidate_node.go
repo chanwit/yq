@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/jinzhu/copier"
-	yaml "gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 type CandidateNode struct {

@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/magiconair/properties"
-	yaml "gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 type propertiesEncoder struct {

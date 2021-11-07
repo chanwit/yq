@@ -10,7 +10,7 @@ import (
 	"strings"
 
 	logging "gopkg.in/op/go-logging.v1"
-	yaml "gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 var log = logging.MustGetLogger("yq-lib")

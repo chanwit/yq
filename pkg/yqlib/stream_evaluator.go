@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	yaml "gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 // A yaml expression evaluator that runs the expression multiple times for each given yaml document.

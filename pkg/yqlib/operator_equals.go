@@ -1,6 +1,6 @@
 package yqlib
 
-import "gopkg.in/yaml.v3"
+import "sigs.k8s.io/kustomize/kyaml/yaml"
 
 func equalsOperator(d *dataTreeNavigator, context Context, expressionNode *ExpressionNode) (Context, error) {
 	log.Debugf("-- equalsOperation")

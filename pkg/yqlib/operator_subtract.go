@@ -5,7 +5,7 @@ import (
 
 	"strconv"
 
-	"gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 func createSubtractOp(lhs *ExpressionNode, rhs *ExpressionNode) *ExpressionNode {

@@ -7,7 +7,7 @@ import (
 	"io"
 	"strings"
 
-	yaml "gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 type Printer interface {

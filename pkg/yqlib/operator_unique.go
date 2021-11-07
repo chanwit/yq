@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/elliotchance/orderedmap"
-	yaml "gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 func unique(d *dataTreeNavigator, context Context, expressionNode *ExpressionNode) (Context, error) {

@@ -3,7 +3,7 @@ package yqlib
 import (
 	"container/list"
 
-	yaml "gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 // A yaml expression evaluator that runs the expression once against all files/nodes in memory.
@@ -73,7 +73,10 @@ func (e *allAtOnceEvaluator) EvaluateFiles(expression string, filenames []string
 		candidateNode := &CandidateNode{
 			Document:  0,
 			Filename:  "",
-			Node:      &yaml.Node{Kind: yaml.DocumentNode, HeadComment: firstFileLeadingContent, Content: []*yaml.Node{{Tag: "!!null", Kind: yaml.ScalarNode}}},
+			Node:      &yaml.Node{
+				Kind: yaml.DocumentNode,
+				HeadComment: firstFileLeadingContent,
+				Content: []*yaml.Node{{Tag: "!!null", Kind: yaml.ScalarNode}}},
 			FileIndex: 0,
 		}
 		allDocuments.PushBack(candidateNode)

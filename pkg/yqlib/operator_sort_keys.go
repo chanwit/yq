@@ -3,7 +3,7 @@ package yqlib
 import (
 	"sort"
 
-	yaml "gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 func sortKeysOperator(d *dataTreeNavigator, context Context, expressionNode *ExpressionNode) (Context, error) {

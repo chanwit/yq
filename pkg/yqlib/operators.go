@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/jinzhu/copier"
-	"gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 type operatorHandler func(d *dataTreeNavigator, context Context, expressionNode *ExpressionNode) (Context, error)

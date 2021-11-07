@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 
-	yaml "gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 type Encoder interface {

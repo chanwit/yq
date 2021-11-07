@@ -10,7 +10,7 @@ import (
 	"testing"
 
 	"github.com/spf13/cobra"
-	yaml "gopkg.in/yaml.v3"
+	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
 type resulter struct {
